@@ -14,6 +14,6 @@ Desenvolver uma página web responsiva utilizando HTML5 e CSS3 (com media querie
 - [Alesssandro Araujo](https://github.com/AlessandroAraujo273)
 - [Daniel Gama](https://github.com/od4nn)
 
-![Logo](https://static.wixstatic.com/media/bf845a_0f1dab369d154de08d3cacb7975432bd~mv2.png/v1/fill/w_1280,h_820,al_c/logo%20ucb.png)
+<img src="https://static.wixstatic.com/media/bf845a_0f1dab369d154de08d3cacb7975432bd~mv2.png/v1/fill/w_1280,h_820,al_c/logo%20ucb.png" width="300px">
 ##
-<img src="https://static.wixstatic.com/media/bf845a_0f1dab369d154de08d3cacb7975432bd~mv2.png/v1/fill/w_1280,h_820,al_c/logo%20ucb.png">
+
