@@ -1,0 +1,85 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#painel_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 10px 20px;
+}
+
+#hero {
+    display: flex;
+    background-color: aliceblue;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    text-align: left;
+}
+#hero img {
+    width: 500px
+}       
+#hero #texto{
+    width: 50%;
+}
+#hero h1 {
+    font-size: 50pt;
+}
+#hero p{
+    font-size: 25pt;
+}
+#paineis{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0px 50px 0px;
+    flex-wrap: wrap;
+    
+}
+#paineis section{
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    text-align: left;
+    height: 200px;
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 7px -1px;
+    transition: 0.2s;
+}
+#painel1 {
+    background-color: aliceblue;
+}
+#paineis img {
+    width: 200px
+}       
+#paineis #texto{
+    width: 50%;
+}
+#paineis h1 {
+    font-size: 20pt;
+}
+#paineis p{
+    font-size: 10pt;
+}
+#painel3{
+    background-color: rgb(186, 184, 145);
+}
+#painel2 {
+    background-color: rgb(134, 174, 137);
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+#paineis section:hover{
+    transform: translateY(-20px);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 23px 7px -1px;
+    transition: 0.2s;
+}
+hr{
+    width: 80%;
+}
