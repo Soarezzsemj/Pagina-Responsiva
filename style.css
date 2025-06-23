@@ -12,10 +12,9 @@ body {
 
 #hero {
     display: flex;
-    background-color: aliceblue;
+    background: linear-gradient(to bottom right, #0a2792, #318fb1);
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
     text-align: left;
 }
 #hero img {
@@ -23,12 +22,15 @@ body {
 }       
 #hero #texto{
     width: 50%;
+    color: white;
+    align-self: flex-start;
 }
 #hero h1 {
     font-size: 50pt;
 }
 #hero p{
-    font-size: 25pt;
+    font-size: 20pt;
+    margin-top: -50px;
 }
 #paineis{
     display: flex;
@@ -49,25 +51,31 @@ body {
     transition: 0.2s;
 }
 #painel1 {
-    background-color: aliceblue;
+    background: linear-gradient(to bottom right, rgb(211, 108, 80), rgb(239, 172, 63) );
+    color: white;
 }
 #paineis img {
-    width: 200px
+    width: 100px;
+    margin: 30px;
 }       
 #paineis #texto{
-    width: 50%;
+    margin-left: 20px;
+    align-self: start;
 }
 #paineis h1 {
-    font-size: 20pt;
+    font-size: 25pt;
 }
 #paineis p{
-    font-size: 10pt;
+    font-size: 12pt;
+    margin-top: -30px;
+    text-align: justify;
 }
 #painel3{
-    background-color: rgb(186, 184, 145);
+    background: linear-gradient(to bottom right, rgb(255, 245, 60), rgb(255, 238, 107) );
 }
 #painel2 {
-    background-color: rgb(134, 174, 137);
+    background:linear-gradient(to bottom right, rgb(59, 93, 145), rgb(35, 161, 193));
+    color: white;
 }
 footer {
     display: flex;
