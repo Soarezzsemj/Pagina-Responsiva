@@ -8,10 +8,10 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px 10px 20px;
-    font-size: 20pt;
+    font-size: 15pt;
 }
 #painel_header h1{
-    font-size: 3500pt;
+    font-size: 35pt;
 }
 #hero {
     display: flex;
@@ -32,6 +32,7 @@ body {
 #hero p{
     font-size: 20pt;
     margin-top: -50px;
+    width: 50%;
 }
 #paineis{
     display: flex;
