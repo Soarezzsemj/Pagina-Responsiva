@@ -255,7 +255,21 @@ hr{
         margin-top: 20px;
     }
     #paineis section{
-        transform: scale(0.9);
+        margin: 0px 10px;
+        transform: scale(.95);
+    }
+    #paineis #texto{
+        align-self: center;
+    }
+    #texto h1{
+        font-size: 20pt;
+    }
+    #texto p{
+        font-size: 12pt;
+        width: 100%;
+    }
+    #paineis img{
+        width: 80px;
     }
 }
 
