@@ -1,10 +1,10 @@
 
-# Construção de Página Responsiva
+# 💻 Construção de Página Responsiva
 
 Este repositório contém o projeto final de frontend desenvolvido como requisito para a conclusão do primeiro semestre na Universidade Católica de Brasília (UCB). O principal objetivo é a criação de uma página web totalmente responsiva, que se adapta de forma fluida e funcional a diferentes tamanhos de tela, desde smartphones e tablets até desktops.
 
 
-## Objetivos
+## 📝 Objetivos
 Desenvolver uma página web responsiva utilizando HTML5 e CSS3 (com media queries) que se adapte corretamente aos diferentes tamanhos de tela: smartphone, tablet e desktop.
 
 
@@ -43,4 +43,4 @@ Este projeto é um exemplo prático de como construir uma experiência web consi
 
     <img src="https://avatars.githubusercontent.com/u/170735008?v=4" width="150px" style="border-radius: 100px;">
 ##
-<img src="https://static.wixstatic.com/media/bf845a_0f1dab369d154de08d3cacb7975432bd~mv2.png/v1/fill/w_1280,h_820,al_c/logo%20ucb.png" width="600px" alt="Logo UCB">
+<img src="https://static.wixstatic.com/media/bf845a_0f1dab369d154de08d3cacb7975432bd~mv2.png/v1/fill/w_1280,h_820,al_c/logo%20ucb.png" width="600px" alt="Logo UCB" style="margin-top: -80px">
