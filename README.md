@@ -26,6 +26,9 @@ Este projeto é um exemplo prático de como construir uma experiência web consi
 - CSS3: Para a estilização e responsividade (com uso intensivo de Media Queries).
 
 - JavaScript: Para adicionar interatividade e dinamismo à interface.
+
+## 🔗 Link da página
+[Página Responsiva](https://github.com/a-alvezx/Pagina-Responsiva)
 ## Autores
 - [André Alves](https://github.com/a-alvezx)
 
