@@ -1,3 +1,4 @@
+/*Definições universais*/
 *{
     margin: 0;
     padding: 0;
@@ -7,10 +8,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between ;
-    text-align: center;
     font-family: sans-serif;
     height: 100vh;
+    animation: entrada 0.5s ease;
 }
+
+/*Cabeçalho*/
 #painel_header {
     display: flex;
     align-items: center;
@@ -22,6 +25,8 @@ body {
 #painel_header h1{
     font-size: 35pt;
 }
+
+/*Banner informativo*/
 #hero {
     display: flex;
     background: linear-gradient(to bottom right, #0a2792, #318fb1);
@@ -43,6 +48,8 @@ body {
     margin-top: 10px;
     width: 70%;
 }
+
+/*Paineis de conteudo*/
 #paineis{
     display: flex;
     justify-content: space-around;
@@ -65,6 +72,13 @@ body {
     background: linear-gradient(to bottom right, rgb(211, 108, 80), rgb(239, 172, 63) );
     color: white;
 }
+#painel2 {
+    background:linear-gradient(to bottom right, rgb(59, 93, 145), rgb(35, 161, 193));
+    color: white;
+}
+#painel3{
+    background: linear-gradient(to bottom right, rgb(255, 245, 60), rgb(255, 238, 107) );
+}
 #paineis img {
     width: 100px;
     margin: 30px;
@@ -80,41 +94,112 @@ body {
     font-size: 12pt;    
     margin-top: 10px;
 }
-#painel3{
-    background: linear-gradient(to bottom right, rgb(255, 245, 60), rgb(255, 238, 107) );
+#paineis section:hover{
+    transform: translateY(-20px);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 23px 7px -1px;
+    transition: 0.2s;
 }
-#painel2 {
-    background:linear-gradient(to bottom right, rgb(59, 93, 145), rgb(35, 161, 193));
-    color: white;
-}
+
+/*Rodapé*/
 footer {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100px;
 }
-#paineis section:hover{
-    transform: translateY(-20px);
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 23px 7px -1px;
-    transition: 0.2s;
-}
 hr{
     width: 80%;
-    display: inline-block;
+    margin: auto;
 }
+
+/*Definições de Menus*/
 #menu_lateral{
     display: none;
 }
 #menu_pc{
     display: block;
 }
+#abrir-menu{
+    display: none;
+ }
 
+
+/*MENU LATERAL*/
+    #menu_lateral {
+        background-color: #ffffff;
+        display: block;
+        position: fixed;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        width: 0%;
+        z-index: 999999;
+        overflow: hidden;
+        transition: .2s;
+    }
+    #menu_lateral nav ul{
+        list-style-type: none;
+        text-align: right;
+    }
+    #menu_lateral nav ul li a{
+        display: block;
+        color: black;
+        font-size: 20px;
+        padding: 20px 8%;
+    }
+     #menu_lateral nav ul li a:hover{
+        background-color: #0a2792;
+        color: black;
+        transition: 0.2s;
+    }
+    #menu_lateral #fechar i{
+        color: black;
+        font-size: 40px;
+    }
+    #menu_lateral #fechar{
+        padding: 20px 5%;
+    }
+    #menu_lateral i:hover{
+        transform: scale(1.1);
+    }
+    #abrir-menu i{
+        color: black;
+        font-size: 40px;
+    }
+    #overlay-menu {
+        background-color: rgba(0, 0, 0, 0.496);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 888888;
+        display: none;
+    }
+    #menu_lateral.abrir{
+        width: 30%;
+    }
+    #menu_lateral.abrir ~ #overlay-menu{
+        display: block;
+    }
+
+
+/*Ajuste para tablets*/
 @media screen and (max-width: 768px) and (min-width: 481px){    
+    body{
+    height: auto;
+    }
+    #menu_lateral{
+        display: block;
+    }
     #painel_header {
         font-size: 10pt;
     }
     #painel_header h1{ 
         font-size: 20pt;
+    }
+    #hero{
+        height: 200px;
     }
     #hero h1 {
         font-size: 30pt;
@@ -130,29 +215,59 @@ hr{
     #menu_pc{
         display: none;
     }
-    /*MENU LATERAL*/
+    #footer{
+        height: 100px;
+    }
+    #abrir-menu{
+        display: block;
+    }
+}
+
+/*Ajuste para smartphones*/
+@media screen and (max-width: 480px) and (min-width: 320px){
+    body{
+        height: auto;
+        width: 100vw;
+    }
+    #menu_pc{
+        display: none;
+    }
     #menu_lateral{
-        background-color: #ffffff;
         display: block;
-        position: fixed;
-        height: 100vh;
-        top: 0;
-        right: 0;
-        width: 30%;
-        z-index: 999999;
     }
-    #menu_lateral nav ul{
-        list-style-type: none;
-        text-align: right;
+    #menu_lateral.abrir{
+        width: 50%;
     }
-    #menu_lateral nav ul li a{
+    #painel_header h1{
+        font-size: 25pt;
+        width: 50%;
+    }
+    #abrir-menu{
         display: block;
-        color: black;
-        font-size: 20px;
-        padding: 20px;
-        font-weight: 300;
     }
-     #menu_lateral nav ul li a:hover{
-        background-color: #0a2792;
+    #hero h1{
+        font-size: 25pt;
+        text-align: center;
     }
+    #hero p{
+        font-size: 13pt;
+        width: 100%;
+        margin-top: 20px;
+    }
+    #paineis section{
+        transform: scale(0.9);
+    }
+}
+
+/*Animações*/
+@keyframes entrada {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }

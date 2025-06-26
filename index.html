@@ -6,6 +6,7 @@
     <title>Página responsiva</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> <!--Icones para o site-->
+    
 </head>
 <body>
     <header>
@@ -13,7 +14,13 @@
             <h1>
                 Aquele Código   
             </h1>           
-            <div id="menu_lateral"> <!--Menu lateral para smartphones e tablets-->
+            <div id="abrir-menu">
+                <i class="bi bi-list"></i>
+            </div>
+            <div id="menu_lateral"> <!--Menu lateral para smartphones e tablets--> 
+                <div id="fechar">
+                    <i class="bi bi-x"></i>
+                </div>
                 <nav>
                     <ul>
                         <li id="itens_menu">
@@ -46,7 +53,8 @@
                     </ul>
                 </nav>
             </div>
-            <div id="menu_pc">
+            <div id="overlay-menu"></div>
+            <div id="menu_pc"> <!--Menu para pc-->
                 <nav>
                     <a href="">Página inicial</a> |
                     <a href="">Sobre nós</a> |
@@ -56,13 +64,13 @@
             </div>
         </div>
     </header>
-    <section id="hero">
+    <section id="hero"> <!--Banner informativo-->
         <div id="texto">
             <h1>INTENSIVO WEB!</h1>
             <p>O Intensivo Web é o seu ponto de partida ideal no universo do desenvolvimento web. Este curso foi criado para quem busca mergulhar de cabeça e adquirir as habilidades essenciais para construir sites e aplicações.</p>
         </div>
     </section>
-    <section id="paineis">
+    <section id="paineis"> <!---Paineis de conteudo-->
         <section id="painel1">
             <div id="texto">
                 <h1>HTML5</h1>
@@ -70,7 +78,7 @@
                 Domine o conhecimento sobre HTML5 e tudo necessario para criar um site responsivo, funcional e de qualidade!</p>
             </div>
             <div id="img_logo">
-                <img src="HTML5.webp" alt="HTML5">
+                <img src="src/HTML5.webp" alt="HTML5">
             </div>
         </section>
         
@@ -80,7 +88,7 @@
                 <p>A face do seu site! Aprenda tudo sobre CSS3 e como deixar o site com um visual atrativo e belo!</p>
             </div>
             <div id="img_logo">
-                <img src="CSS3.webp" alt="CSS3">
+                <img src="src/CSS3.webp" alt="CSS3">
             </div>
         </section>
     
@@ -90,12 +98,12 @@
                 <p>Aquilo que da a vida ao seu site! Aprenda tudo sobre JavaScript e como deixar seu site extremamente vivo!</p>
             </div>
             <div id="img_logo">
-                 <img src="js.png" alt="JavaScript">
+                 <img src="src/js.png" alt="JavaScript">
             </div>
         </section>
     </section>
     <hr>    
-    <footer>
+    <footer> <!--Rodapé-->
         <nav>
             <a href="">Página inicial</a> |
             <a href="">Sobre nós</a> |
@@ -103,5 +111,6 @@
             <a href="">Contatos</a> 
         </nav>  
     </footer>
+    <script src="script.js"></script> <!--Javascript necessario para o menu lateral-->
 </body>
 </html>
