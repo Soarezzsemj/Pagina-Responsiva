@@ -28,7 +28,7 @@ Este projeto é um exemplo prático de como construir uma experiência web consi
 - JavaScript: Para adicionar interatividade e dinamismo à interface.
 
 ## 🔗 Link da página
-[Página Responsiva](https://github.com/a-alvezx/Pagina-Responsiva)
+[Página Responsiva](https://a-alvezx.github.io/Pagina-Responsiva/)
 ## Autores
 - [André Alves](https://github.com/a-alvezx)
 
